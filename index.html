@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sandeep Angala — Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Sandeep Angala — Full Stack Developer & UI Enthusiast. Explore projects, skills, and achievements." />
+  <meta name="author" content="Sandeep Angala" />
+  <meta name="keywords" content="Sandeep Angala, Full Stack Developer, Portfolio, Web Developer, UI UX" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">{</span> SA <span class="logo-bracket">}</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <i data-lucide="sun" class="theme-icon sun-icon"></i>
+          <i data-lucide="moon" class="theme-icon moon-icon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════ HERO ═══════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <p class="hero-greeting reveal">Hello, I'm</p>
+        <h1 class="hero-name reveal">Sandeep Angala</h1>
+        <div class="hero-tagline-wrapper reveal">
+          <span class="hero-tagline" id="heroTagline"></span>
+          <span class="typing-cursor">|</span>
+        </div>
+        <p class="hero-intro reveal">
+          A passionate full-stack developer crafting elegant, performant, and user-centric digital experiences. 
+          I turn complex problems into simple, beautiful solutions.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#projects" class="btn btn-primary">
+            <i data-lucide="folder-open"></i> View Projects
+          </a>
+          <a href="assets/resume.pdf" download class="btn btn-outline">
+            <i data-lucide="download"></i> Download Resume
+          </a>
+        </div>
+        <div class="hero-socials reveal">
+          <a href="https://www.linkedin.com/in/sandeep-angala-a10757294/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
+            <i data-lucide="linkedin"></i>
+          </a>
+          <a href="https://github.com/SandeepAngala" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link">
+            <i data-lucide="github"></i>
+          </a>
+          <a href="mailto:sandeepbablu265@gmail.com" aria-label="Email" class="social-link">
+            <i data-lucide="mail"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="hero-code-block">
+          <div class="code-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <pre class="code-body"><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-key">name</span>: <span class="code-string">"Sandeep Angala"</span>,
+  <span class="code-key">role</span>: <span class="code-string">"Full Stack Dev"</span>,
+  <span class="code-key">passion</span>: <span class="code-string">"Building the Web"</span>,
+  <span class="code-key">coffee</span>: <span class="code-bool">true</span>,
+  <span class="code-key">skills</span>: [<span class="code-string">"React"</span>, <span class="code-string">"Node"</span>, <span class="code-string">"Python"</span>],
+  <span class="code-key">motto</span>: <span class="code-string">"Ship fast, iterate faster"</span>
+};</code></pre>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <i data-lucide="chevrons-down"></i>
+    </a>
+  </section>
+
+  <!-- ═══════════════════════ ABOUT ═══════════════════════ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="title-accent">//</span> About Me
+      </h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a <strong>B.Tech Computer Science</strong> student at Lovely Professional University, passionate about building 
+            modern web applications that solve real-world problems. With a keen eye for design and a love for clean code, 
+            I bridge the gap between aesthetics and functionality.
+          </p>
+          <p>
+            My journey in tech has been fueled by curiosity and a relentless drive to learn. From competitive programming 
+            to full-stack development, I thrive on challenges that push me beyond my comfort zone.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-card reveal">
+              <i data-lucide="zap"></i>
+              <h3>Quick Learner</h3>
+              <p>Rapidly adapt to new technologies and frameworks</p>
+            </div>
+            <div class="highlight-card reveal">
+              <i data-lucide="shuffle"></i>
+              <h3>Adaptable</h3>
+              <p>Thrive in dynamic environments and evolving requirements</p>
+            </div>
+            <div class="highlight-card reveal">
+              <i data-lucide="move"></i>
+              <h3>Flexible</h3>
+              <p>Comfortable across the full stack, from UI to databases</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <span class="stat-number" data-count="5">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-count="8">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-count="4">0</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-count="2">0</span>
+            <span class="stat-label">Hackathon Awards</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ SKILLS ═══════════════════════ -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="title-accent">//</span> Skills & Tech Stack
+      </h2>
+      <div class="skills-grid">
+        <!-- Languages -->
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <i data-lucide="code-2"></i>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" data-level="90">C++</span>
+            <span class="skill-tag" data-level="85">Python</span>
+            <span class="skill-tag" data-level="80">Java</span>
+          </div>
+        </div>
+        <!-- Frontend -->
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <i data-lucide="layout"></i>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" data-level="95">HTML</span>
+            <span class="skill-tag" data-level="90">CSS</span>
+            <span class="skill-tag" data-level="88">JavaScript</span>
+            <span class="skill-tag" data-level="82">React</span>
+          </div>
+        </div>
+        <!-- Backend & Tools -->
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <i data-lucide="server"></i>
+            <h3>Backend & Tools</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" data-level="80">Node.js</span>
+            <span class="skill-tag" data-level="78">MongoDB</span>
+            <span class="skill-tag" data-level="75">DBMS</span>
+          </div>
+        </div>
+        <!-- Soft Skills -->
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <i data-lucide="users"></i>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag soft">Problem Solving</span>
+            <span class="skill-tag soft">Team Collaboration</span>
+            <span class="skill-tag soft">Communication</span>
+            <span class="skill-tag soft">Leadership</span>
+            <span class="skill-tag soft">Time Management</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ PROJECTS ═══════════════════════ -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="title-accent">//</span> Featured Projects
+      </h2>
+      <div class="projects-grid">
+        <!-- Project 1: Brainstrom Club -->
+        <div class="project-card reveal">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <i data-lucide="brain"></i>
+            </div>
+            <div class="project-links-top">
+              <a href="https://github.com/SandeepAngala" target="_blank" rel="noopener noreferrer" aria-label="GitHub repo" class="project-link-icon">
+                <i data-lucide="github"></i>
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Live demo" class="project-link-icon">
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Brainstrom Club</h3>
+          <p class="project-description">
+            A collaborative platform designed to foster knowledge sharing and brainstorming among students. 
+            Features include real-time discussions, resource sharing, event management, and community building tools.
+          </p>
+          <ul class="project-features">
+            <li>Interactive discussion forums with real-time updates</li>
+            <li>Event creation and management dashboard</li>
+            <li>Resource library with categorized materials</li>
+            <li>User authentication and profile management</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">Node.js</span>
+            <span class="tech-badge">MongoDB</span>
+            <span class="tech-badge">CSS</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/SandeepAngala" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+              <i data-lucide="github"></i> GitHub Repo
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: AgroFertMart -->
+        <div class="project-card reveal">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <i data-lucide="shopping-cart"></i>
+            </div>
+            <div class="project-links-top">
+              <a href="https://github.com/SandeepAngala" target="_blank" rel="noopener noreferrer" aria-label="GitHub repo" class="project-link-icon">
+                <i data-lucide="github"></i>
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Live demo" class="project-link-icon">
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">AgroFertMart</h3>
+          <p class="project-description">
+            A full-featured e-commerce platform for agricultural fertilizers and products. Built with a modern tech stack 
+            featuring admin dashboards, product management, and secure user authentication.
+          </p>
+          <ul class="project-features">
+            <li>Admin dashboard for product & order management</li>
+            <li>Product catalog with search and filter functionality</li>
+            <li>Secure user authentication and authorization</li>
+            <li>Responsive design for all devices</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">Node.js</span>
+            <span class="tech-badge">MongoDB</span>
+            <span class="tech-badge">Express</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/SandeepAngala" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+              <i data-lucide="github"></i> GitHub Repo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ CERTIFICATIONS ═══════════════════════ -->
+  <section class="section certifications" id="certifications">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="title-accent">//</span> Certifications
+      </h2>
+      <div class="cert-grid">
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i data-lucide="shield-check"></i></div>
+          <h3>Privacy and Security in Online Social Media</h3>
+          <p class="cert-issuer">NPTEL</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i data-lucide="monitor-smartphone"></i></div>
+          <h3>Responsive Web Design</h3>
+          <p class="cert-issuer">FreeCodeCamp</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i data-lucide="scan-eye"></i></div>
+          <h3>Ethical Hacking Training</h3>
+          <p class="cert-issuer">CodeSprint</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i data-lucide="bot"></i></div>
+          <h3>ChatGPT Prompt Engineering</h3>
+          <p class="cert-issuer">Infosys</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ EDUCATION ═══════════════════════ -->
+  <section class="section education" id="education">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="title-accent">//</span> Education
+      </h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Aug 2023 — Present</span>
+            <h3>B.Tech — Computer Science & Engineering</h3>
+            <p class="timeline-institution">Lovely Professional University (LPU)</p>
+            <p class="timeline-detail">CGPA: <strong>7.8</strong></p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Intermediate</span>
+            <h3>Intermediate (12th Grade)</h3>
+            <p class="timeline-institution">SRM Junior College</p>
+            <p class="timeline-detail">Score: <strong>96.4%</strong></p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Matriculation</span>
+            <h3>Matriculation (10th Grade)</h3>
+            <p class="timeline-institution">ZP High School</p>
+            <p class="timeline-detail">CGPA: <strong>10</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ ACHIEVEMENTS ═══════════════════════ -->
+  <section class="section achievements" id="achievements">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="title-accent">//</span> Achievements
+      </h2>
+      <div class="achievements-grid">
+        <div class="achievement-card reveal">
+          <div class="achievement-icon"><i data-lucide="trophy"></i></div>
+          <h3>Top 10 — Web Hackathon</h3>
+          <p>Secured a <strong>Top 10</strong> position among 50+ competing teams as part of <strong>TEAM-7</strong>. 
+          Demonstrated rapid prototyping, teamwork, and problem-solving under time pressure.</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-icon"><i data-lucide="award"></i></div>
+          <h3>2nd Prize — Chess Championship</h3>
+          <p>Won <strong>2nd Prize</strong> in the Inter School Chess Championship, showcasing strategic thinking, 
+          patience, and competitive spirit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ CONTACT ═══════════════════════ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="title-accent">//</span> Get In Touch
+      </h2>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="contact-intro">
+            Have a project in mind or want to collaborate? Feel free to reach out — I'd love to connect!
+          </p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i data-lucide="mail"></i>
+              <a href="mailto:sandeepbablu265@gmail.com">sandeepbablu265@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <i data-lucide="phone"></i>
+              <a href="tel:+919346425675">+91-9346425675</a>
+            </div>
+            <div class="contact-item">
+              <i data-lucide="linkedin"></i>
+              <a href="https://www.linkedin.com/in/sandeep-angala-a10757294/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+            </div>
+            <div class="contact-item">
+              <i data-lucide="github"></i>
+              <a href="https://github.com/SandeepAngala" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i data-lucide="send"></i> Send Message
+          </button>
+          <div class="form-status" id="formStatus"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo">
+          <span class="logo-bracket">{</span> SA <span class="logo-bracket">}</span>
+        </a>
+        <p>Crafting digital experiences with code & creativity.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/sandeep-angala-a10757294/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        <a href="https://github.com/SandeepAngala" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i data-lucide="github"></i></a>
+        <a href="mailto:sandeepbablu265@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Sandeep Angala. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
