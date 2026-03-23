@@ -656,6 +656,17 @@ img {
 .cert-date {
   font-size: 0.8rem;
   color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.view-cert-btn {
+  margin-top: auto;
+  width: 100%;
+  justify-content: center;
+}
+
+.cert-overlay {
+  text-decoration: none;
 }
 
 
